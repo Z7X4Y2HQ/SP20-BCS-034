@@ -1,0 +1,10 @@
+body {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.website:hover{
+  font-size: 22px;
+  transition: 100ms;
+  color: #568bb2 !important;
+  font-weight: bold;
+}
