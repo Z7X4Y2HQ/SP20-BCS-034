@@ -1,10 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Material Design</title>
   </head>
-  <body></body>
+  <body style="margin: 0px; font-family: 'Open Sans'">
+    <div
+      style="
+        width: 100%;
+        background-color: #e7f0f6;
+        padding: 24px 40px;
+        display: flex;
+        justify-content: space-between;
+      "
+    >
+      <div>
+        <div style="color: #00658e; font-size: 20px; margin: 0px 0px 4px">
+          The latest version of Material Design is now available for Android
+        </div>
+        <div style="color: #00658e; font-size: 14px">
+          Learn about Material 3's new features and support for modern design & developer workflows
+        </div>
+      </div>
+      <div style="padding: 0 80px; display: flex; justify-content: center; align-items: center">
+        <button class="button">
+          <a style="text-decoration: none; color: black" href="#">
+            Start exploring Material 3
+            <i style="padding: 0 6px" class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </button>
+      </div>
+    </div>
+    <div
+      style="
+        height: 72px;
+        width: 100%;
+        background-color: #212121;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 5px 10px 18px red;
+      "
+    >
+      <div style="display: flex; align-items: center">
+        <img
+          width="30px"
+          height="30px"
+          style="background-color: #fff; border-radius: 100px; margin: 0 16px 0 26px"
+          src="https://material.io/static/angular/material_logo.1d5336632349ee8653bf.svg"
+          alt=""
+        />
+        <div style="font-family: 'Roboto Mono'; color: white; font-size: 16px">MATERIAL DESIGN</div>
+      </div>
+      <p class="headerRight">
+        <a class="headerMenu" href="#">Design</a>
+        <a class="headerMenu" href="#">Components</a>
+        <a class="headerMenu" href="#">Develop</a>
+        <a class="headerMenu" href="#">Resources</a>
+        <a class="headerMenu" href="#">Blog</a>
+        <i
+          style="font-size: 18px; color: white; padding: 0 24px 0 44px"
+          class="fa-solid fa-magnifying-glass"
+        ></i>
+      </p>
+    </div>
+    <div
+      style="
+        height: 598px;
+        width: 100%;
+        background-image: url(https://lh3.googleusercontent.com/BoNssU4yW1fSjpblBYpAuB917yBmYolbBt6rAoS71E5nZ02XHhnUihBAU2TZolfrx8ijsez4r_8ohTucyt9OBaqy59WxuTvWGcPXCO3vHjzV6xgwBw=w1864-rj);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div
+        style="
+          width: 50%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div style="width: 63%; padding-right: 40px">
+          <p style="margin: 0px; font-size: 64px; font-weight: bold">
+            Update to <br />
+            Material Design 3
+          </p>
+          <span style="font-size: 16px">
+            Migrate to Material Design 3 to take advantage of new personalization and accessibility
+            features
+          </span>
+          <br />
+          <br />
+          <button style="background-color: #60620b" class="button">
+            <a style="text-decoration: none; color: white" href="#">
+              Start using the new guidelines
+              <i style="padding: 0 6px" class="fa-solid fa-arrow-right-long"></i>
+            </a>
+          </button>
+        </div>
+        <div style="padding-top: 36px">
+          <video
+            style="
+              border: 7px solid #d4d597;
+              border-bottom: none;
+              border-top-left-radius: 20px;
+              border-top-right-radius: 20px;
+            "
+            height="560"
+            autoplay
+            muted
+            loop
+          >
+            <source
+              src="https://kstatic.googleusercontent.com/files/06fc88875c49d49f95292f5fc6b156a4dfebc772e112429027d9e3d76e4b6b995c9a75b510a0fa6dd31684b3db60c36b0052addb82cd9c41394cea3d4689464a"
+              type="video/mp4"
+            />
+            <source
+              src="https://lh3.googleusercontent.com/6G-7ATviNK3DGW66IgJT8AVE_4GH8gnMxNxoAdVUn8IwpaFrNEk1n3-ayjKiG2SYMTgGOGLsLnGh6yuKM5jAEagstVI_Kwqp2m5auerRjskh1QHDxVw=w360-rj"
+              type="video/ogg"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
