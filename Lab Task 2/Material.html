@@ -11,129 +11,144 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Material Design</title>
   </head>
-  <body style="margin: 0px; font-family: 'Open Sans'">
-    <div
-      style="
-        width: 100%;
-        background-color: #e7f0f6;
-        padding: 24px 40px;
-        display: flex;
-        justify-content: space-between;
-      "
-    >
+  <body>
+    <div class="topBar">
       <div>
-        <div style="color: #00658e; font-size: 20px; margin: 0px 0px 4px">
+        <div class="topBarText">
           The latest version of Material Design is now available for Android
         </div>
-        <div style="color: #00658e; font-size: 14px">
+        <div>
           Learn about Material 3's new features and support for modern design & developer workflows
         </div>
       </div>
-      <div style="padding: 0 80px; display: flex; justify-content: center; align-items: center">
-        <button class="button">
-          <a style="text-decoration: none; color: black" href="#">
+      <div class="topBarButtonArea">
+        <button class="topBarButton">
+          <a href="#">
             Start exploring Material 3
             <i style="padding: 0 6px" class="fa-solid fa-arrow-right-long"></i>
           </a>
         </button>
       </div>
     </div>
-    <div
-      style="
-        height: 72px;
-        width: 100%;
-        background-color: #212121;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: 5px 10px 18px red;
-      "
-    >
-      <div style="display: flex; align-items: center">
-        <img
-          width="30px"
-          height="30px"
-          style="background-color: #fff; border-radius: 100px; margin: 0 16px 0 26px"
-          src="https://material.io/static/angular/material_logo.1d5336632349ee8653bf.svg"
-          alt=""
-        />
-        <div style="font-family: 'Roboto Mono'; color: white; font-size: 16px">MATERIAL DESIGN</div>
+    <div class="homepageMainImage">
+      <div class="header">
+        <div style="display: flex; align-items: center">
+          <img
+            class="logo"
+            width="30px"
+            height="30px"
+            src="https://material.io/static/angular/material_logo.1d5336632349ee8653bf.svg"
+            alt=""
+          />
+          <div class="logoText">MATERIAL DESIGN</div>
+        </div>
+        <p class="headerRight">
+          <a class="headerMenu" href="#">Design</a>
+          <a class="headerMenu" href="#">Components</a>
+          <a class="headerMenu" href="#">Develop</a>
+          <a class="headerMenu" href="#">Resources</a>
+          <a class="headerMenu" href="#">Blog</a>
+          <i
+            style="font-size: 18px; color: white; padding: 0 24px 0 44px"
+            class="fa-solid fa-magnifying-glass"
+          ></i>
+        </p>
       </div>
-      <p class="headerRight">
-        <a class="headerMenu" href="#">Design</a>
-        <a class="headerMenu" href="#">Components</a>
-        <a class="headerMenu" href="#">Develop</a>
-        <a class="headerMenu" href="#">Resources</a>
-        <a class="headerMenu" href="#">Blog</a>
-        <i
-          style="font-size: 18px; color: white; padding: 0 24px 0 44px"
-          class="fa-solid fa-magnifying-glass"
-        ></i>
-      </p>
+      <div class="mainImageContainer">
+        <div>
+          <div class="mainImageIntro">
+            <p class="introHeadline">
+              Update to <br />
+              Material Design 3
+            </p>
+            <span style="font-size: 16px">
+              Migrate to Material Design 3 to take advantage of new personalization and
+              accessibility features
+            </span>
+            <br />
+            <br />
+            <button class="mainImageButton">
+              <a style="text-decoration: none; color: white" href="#">
+                Start using the new guidelines
+                <i style="padding: 0 6px" class="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </button>
+          </div>
+          <div>
+            <video class="mainImageVideo" height="560" autoplay muted loop>
+              <source
+                src="https://kstatic.googleusercontent.com/files/06fc88875c49d49f95292f5fc6b156a4dfebc772e112429027d9e3d76e4b6b995c9a75b510a0fa6dd31684b3db60c36b0052addb82cd9c41394cea3d4689464a"
+                type="video/mp4"
+              />
+              <source
+                src="https://lh3.googleusercontent.com/6G-7ATviNK3DGW66IgJT8AVE_4GH8gnMxNxoAdVUn8IwpaFrNEk1n3-ayjKiG2SYMTgGOGLsLnGh6yuKM5jAEagstVI_Kwqp2m5auerRjskh1QHDxVw=w360-rj"
+                type="video/ogg"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
     </div>
-    <div
-      style="
-        height: 598px;
-        width: 100%;
-        background-image: url(https://lh3.googleusercontent.com/BoNssU4yW1fSjpblBYpAuB917yBmYolbBt6rAoS71E5nZ02XHhnUihBAU2TZolfrx8ijsez4r_8ohTucyt9OBaqy59WxuTvWGcPXCO3vHjzV6xgwBw=w1864-rj);
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      "
-    >
+    <div class="content">
       <div
         style="
-          width: 50%;
           display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
+          flex-direction: column;
+          font-family: 'Roboto';
+          padding-top: 60px;
+          width: 60%;
         "
       >
-        <div style="width: 63%; padding-right: 40px">
-          <p style="margin: 0px; font-size: 64px; font-weight: bold">
-            Update to <br />
-            Material Design 3
-          </p>
-          <span style="font-size: 16px">
-            Migrate to Material Design 3 to take advantage of new personalization and accessibility
-            features
-          </span>
-          <br />
-          <br />
-          <button style="background-color: #60620b" class="button">
-            <a style="text-decoration: none; color: white" href="#">
-              Start using the new guidelines
-              <i style="padding: 0 6px" class="fa-solid fa-arrow-right-long"></i>
-            </a>
-          </button>
-        </div>
-        <div style="padding-top: 36px">
-          <video
-            style="
-              border: 7px solid #d4d597;
-              border-bottom: none;
-              border-top-left-radius: 20px;
-              border-top-right-radius: 20px;
-            "
-            height="560"
-            autoplay
-            muted
-            loop
+        <h2 style="font-size: 32px">
+          News from I/O 2022 <br />
+          <span style="font-size: 16px; color: #616161"
+            >latest posts on the Material Design blog</span
           >
-            <source
-              src="https://kstatic.googleusercontent.com/files/06fc88875c49d49f95292f5fc6b156a4dfebc772e112429027d9e3d76e4b6b995c9a75b510a0fa6dd31684b3db60c36b0052addb82cd9c41394cea3d4689464a"
-              type="video/mp4"
+        </h2>
+        <div style="display: flex; flex-direction: row; padding-bottom: 50px">
+          <div class="blog">
+            <img
+              style="border: 0.5px solid #dad5d1"
+              height="180"
+              src="https://lh3.googleusercontent.com/gP6lhLobKT8STMKp-3AZ1vn1fpF2EEz8kSQdioNdsfHT5lN6Lb4iANEYipRYmJKmee-RoK8BdT50gZ5fmYr4sepyRp4iyM8EB2ek62g9vo0UY8tTi2E=w760-h380"
+              alt=""
             />
-            <source
-              src="https://lh3.googleusercontent.com/6G-7ATviNK3DGW66IgJT8AVE_4GH8gnMxNxoAdVUn8IwpaFrNEk1n3-ayjKiG2SYMTgGOGLsLnGh6yuKM5jAEagstVI_Kwqp2m5auerRjskh1QHDxVw=w360-rj"
-              type="video/ogg"
+            <p style="font-size: 14px; color: #757575">BLOG</p>
+            <p style="font-size: 20px; color: #212121">Join Material Design at I/O ‘22</p>
+            <p style="font-size: 16px; color: #616161">
+              Get the full download on what Material Design updates you can expect at I/O this year
+            </p>
+          </div>
+          <div class="blog">
+            <img
+              style="border: 0.5px solid #dad5d1"
+              height="180"
+              src="https://lh3.googleusercontent.com/fyCRbUYXjyG_I9mCgEgBFyKUPFF9NpDpjx-jNED7ijtNRcYstULDWK_L02vqGkjUtDHt7UhFo8VOOrw3VVFR7_Y8RGkGUR32x8Fn-xqU5rjNkCtUqwk=w760-h380"
+              alt=""
             />
-            Your browser does not support the video tag.
-          </video>
+            <p style="font-size: 14px; color: #757575">BLOG</p>
+            <p style="font-size: 20px; color: #212121">Join Material Design at I/O ‘22</p>
+            <p style="font-size: 16px; color: #616161">
+              Get the full download on what Material Design updates you can expect at I/O this year
+            </p>
+          </div>
+          <div class="blog">
+            <img
+              style="border: 0.5px solid #dad5d1"
+              height="180"
+              src="https://lh3.googleusercontent.com/9p5RsFcevOq_F3ZO3wcdM8C2Wy8NuWuGe0ZEMtEy0y34gIEp4jm1m4nShNuN3ckk0Y65jjnBKabO-uYO3CeP53Or0H-FpQeoFRXdVLuk_KVuBk0www=w760-h380"
+              alt=""
+            />
+            <p style="font-size: 14px; color: #757575">BLOG</p>
+            <p style="font-size: 20px; color: #212121">Join Material Design at I/O ‘22</p>
+            <p style="font-size: 16px; color: #616161">
+              Get the full download on what Material Design updates you can expect at I/O this year
+            </p>
+          </div>
         </div>
+        <div style="height: 30px"></div>
+        <hr style="border-bottom: 0.1px solid #c7c7c7; width: 1169px" />
+        <div style="height: 500px"></div>
       </div>
     </div>
   </body>
