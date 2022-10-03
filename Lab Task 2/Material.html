@@ -12,25 +12,35 @@
     <title>Material Design</title>
   </head>
   <body>
-    <div class="topBar">
-      <div>
-        <div class="topBarText">
-          The latest version of Material Design is now available for Android
-        </div>
+    <header
+      style="
+        position: fixed;
+        /* top: 0; */
+        left: 0;
+        right: 0;
+        transition: top 0.2s ease-in-out;
+        z-index: 100;
+      "
+    >
+      <div class="topBar">
         <div>
-          Learn about Material 3's new features and support for modern design & developer workflows
+          <div class="topBarText">
+            The latest version of Material Design is now available for Android
+          </div>
+          <div>
+            Learn about Material 3's new features and support for modern design & developer
+            workflows
+          </div>
+        </div>
+        <div class="topBarButtonArea">
+          <button class="topBarButton">
+            <a href="#">
+              Start exploring Material 3
+              <i style="padding: 0 6px" class="fa-solid fa-arrow-right-long"></i>
+            </a>
+          </button>
         </div>
       </div>
-      <div class="topBarButtonArea">
-        <button class="topBarButton">
-          <a href="#">
-            Start exploring Material 3
-            <i style="padding: 0 6px" class="fa-solid fa-arrow-right-long"></i>
-          </a>
-        </button>
-      </div>
-    </div>
-    <div class="homepageMainImage">
       <div class="header">
         <div style="display: flex; align-items: center">
           <img
@@ -54,6 +64,8 @@
           ></i>
         </p>
       </div>
+    </header>
+    <div class="homepageMainImage">
       <div class="mainImageContainer">
         <div>
           <div class="mainImageIntro">
@@ -96,7 +108,7 @@
           flex-direction: column;
           font-family: 'Roboto';
           padding-top: 60px;
-          width: 60%;
+          width: 62%;
         "
       >
         <h2 style="font-size: 32px">
@@ -157,7 +169,7 @@
           flex-direction: column;
           font-family: 'Roboto';
           padding-top: 60px;
-          width: 60%;
+          width: 62%;
         "
       >
         <h2 style="font-size: 32px">
@@ -248,6 +260,85 @@
         </div>
       </div>
     </div>
-    <div style="height: 311px; background-color: #fafafa"></div>
+    <div style="height: 311px; background-color: #fafafa; display: flex; justify-content: center">
+      <div>
+        <div style="display: flex; flex-direction: row; padding: 32px 0 32px">
+          <img
+            style="margin-top: 15px; margin-right: 30px"
+            class="logo"
+            width="64px"
+            height="64px"
+            src="https://material.io/static/angular/material_logo.1d5336632349ee8653bf.svg"
+            alt=""
+          />
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              font-size: 14px;
+              font-family: 'Roboto';
+              color: #424242;
+            "
+          >
+            <p style="width: 530px; line-height: 1.5">
+              Material is an adaptable system of guidelines, components, and tools that support the
+              best practices of user interface design. Backed by open-source code, Material
+              streamlines collaboration between designers and developers, and helps teams quickly
+              build beautiful products.
+            </p>
+            <br />
+            <div>
+              <a class="footerLink" href="#">GitHub</a><span style="padding: 0 8px">/</span>
+              <a class="footerLink" href="#">Twitter</a><span style="padding: 0 8px">/</span>
+              <a class="footerLink" href="#">YouTube</a><span style="padding: 0 8px">/</span>
+              <a class="footerLink" href="#">Blog RSS</a><span style="padding: 0 8px">/</span>
+              <a class="footerLink" href="#">Subscribe for updates</a>
+            </div>
+          </div>
+        </div>
+        <hr style="width: 1169px" />
+        <div style="padding: 32px 0 0 32px; display: flex; align-items: center">
+          <img
+            style="padding-right: 22px"
+            src="https://material.io/static/angular/google_logo.615218d27dfa21b216ba.svg"
+            alt=""
+          />
+          <a
+            style="padding-left: 16px; font-size: 14px; font-family: 'Roboto'; color: #424242"
+            class="footerLink"
+            href="#"
+            >Privacy Policy</a
+          >
+          <a
+            style="padding-left: 16px; font-size: 14px; font-family: 'Roboto'; color: #424242"
+            class="footerLink"
+            href="#"
+            >Terms of Service</a
+          >
+          <a
+            style="padding-left: 16px; font-size: 14px; font-family: 'Roboto'; color: #424242"
+            class="footerLink"
+            href="#"
+            >Feedback</a
+          >
+        </div>
+      </div>
+    </div>
   </body>
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    var headerDiv = document.querySelector("header");
+    var headerBottom = headerDiv.offsetTop + headerDiv.offsetHeight;
+
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+
+      if (prevScrollpos > currentScrollPos || currentScrollPos < headerBottom) {
+        headerDiv.style.top = "0";
+      } else {
+        headerDiv.style.top = "-10.7rem";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  </script>
 </html>
